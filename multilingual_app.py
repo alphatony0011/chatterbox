@@ -229,7 +229,7 @@ def generate_tts_audio(
         print("No audio prompt provided; using default voice.")
         
     wav = current_model.generate(
-        text_input[:300],  # Truncate text to max chars
+        text_input[:1000],  # Truncate text to max chars
         language_id=language_id,
         **generate_kwargs
     )

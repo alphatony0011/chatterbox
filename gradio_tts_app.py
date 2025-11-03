@@ -88,6 +88,6 @@ with gr.Blocks() as demo:
 
 if __name__ == "__main__":
     demo.queue(
-        max_size=50,
+        max_size=250,
         default_concurrency_limit=1,
     ).launch(share=True)
